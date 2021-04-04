@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B5AEAE"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/txtLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Login"
+        android:inputType="textPersonName"
+        android:text="Login" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Mot De Passe"
+        android:inputType="textPassword"
+        tools:text="Mot De Passe" />
+
+    <Button
+        android:id="@+id/btnConnection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connecter"
+        app:backgroundTint="#5C5858" />
+
+    <Button
+        android:id="@+id/btnInscription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inscription"
+        app:backgroundTint="#5C5858" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="447dp"
+        android:padding="10dp"
+        app:srcCompat="@drawable/image" />
+</LinearLayout>
