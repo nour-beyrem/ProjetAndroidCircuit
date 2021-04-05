@@ -57,7 +57,7 @@ public class CircuitActivity extends AppCompatActivity {
 
         db = openOrCreateDatabase("dbCircuits",MODE_PRIVATE,null);
         // Création de la table comptes
-        db.execSQL("CREATE TABLE IF NOT EXISTS CIRCUITs (id integer primary key autoincrement, villeDepart VARCHAR, villeArrive VARCHAR, prix REAL, duree INTEGER);");
+        db.execSQL("CREATE TABLE IF NOT EXISTS CIRCUITS (id integer primary key autoincrement, villeDepart VARCHAR(255), villeArrive VARCHAR(255), prix REAL, duree INTEGER);");
 
 
         _btnRechercheV.setOnClickListener(new View.OnClickListener() {
@@ -269,7 +269,7 @@ public class CircuitActivity extends AppCompatActivity {
                     AlertDialog dial = MesOptions();
                     dial.show();
                 } catch (Exception e) {
-                    Toast.makeText(getApplicationContext(),"Sélectionner un compte puis appyuer sur le bouton de suppresssion",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"Sélectionner une circuit puis appyuer sur le bouton de suppresssion",Toast.LENGTH_SHORT).show();
                     e.printStackTrace();
                 }
             }
