@@ -35,6 +35,8 @@ public class ConsulteActivity extends AppCompatActivity {
         _txtVilleS = (EditText) findViewById(R.id.txtVilleS);
         _txtPrix = (EditText) findViewById(R.id.txtPrix);
         _txtDuree = (EditText) findViewById(R.id.txtDuree);
+        _txtPinf = (EditText) findViewById(R.id.txtPinf);
+        _txtPsup = (EditText) findViewById(R.id.txtPsup);
 
 
         _btnFirst = (Button) findViewById(R.id.btnFirst);
